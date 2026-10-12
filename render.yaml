@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: garbacircle-partner-finder
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: NODE_ENV
+        value: production
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: MONGODB_URI
+        sync: false
+      - key: RESEND_API_KEY
+        sync: false
+      - key: OTP_FROM_EMAIL
+        sync: false

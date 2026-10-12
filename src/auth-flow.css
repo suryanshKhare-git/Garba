@@ -1,0 +1,6 @@
+.field-hint{display:flex;align-items:center;gap:5px;margin-top:7px;color:#877c7a;font-size:11px}
+.dev-code{display:grid;grid-template-columns:1fr auto;align-items:center;gap:4px 12px;padding:13px 15px;border:1px solid #e8d9bd;border-radius:9px;background:#fcf6e9;color:#69532f}
+.dev-code b{font-size:12px}.dev-code>span{font-size:21px;font-weight:700;letter-spacing:4px}.dev-code small{grid-column:1/-1;color:#8c7858;font-size:10px;line-height:1.5}
+.resend-code{justify-self:center;display:flex;align-items:center;min-height:36px;padding:5px 8px}
+.auth-form-wrap> .text-btn{display:inline-flex;align-items:center;gap:6px;margin:0 0 17px;padding:5px 0}
+@media(max-width:600px){.dev-code{padding:11px 12px}.dev-code>span{font-size:18px}}
